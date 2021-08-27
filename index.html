@@ -95,6 +95,7 @@ hr {
 
 
     <button id = "check" onclick="btn001()" class="registerbtn">إظهار الكود</button>  
+    <button id = "open" onclick="openInNewTab()" class="openbtn">الذهاب للإمتحان</button>  
    
     <div class="code">  
     <label id = "message001"  >   </label>  
@@ -108,13 +109,172 @@ var group;
     function btn001() {
     
     
-        var text001 = "المنظومة مغلقة حاليا !";
+        var text001;
+        var id = firstname.value;
         
+
+
+        if(id == "")text001 = "يجب كتابة رقم القيد أولا !";
+  
+        else if(id == 09171013) { text001 = "Code : " + "11689@JY5NH4";group="a"; }
+else if(id == 09171108) { text001 = "Code : " + "11689@52GXHF";group="a"; }
+else if(id == 09171507) { text001 = "Code : " + "11689@K83LMQ";group="a"; }
+else if(id == 09181004) { text001 = "Code : " + "11689@YLEN87";group="a"; }
+else if(id == 09181058) { text001 = "Code : " + "11689@L3QZT2";group="a"; }
+else if(id == 09181504) { text001 = "Code : " + "11689@8NHD4J";group="a"; }
+else if(id == 09181514) { text001 = "Code : " + "11689@DS59GJ";group="a"; }
+else if(id == 09191001) { text001 = "Code : " + "11689@DCTP98";group="a"; }
+else if(id == 09191006) { text001 = "Code : " + "11689@R3HXM4";group="a"; }
+else if(id == 09191007) { text001 = "Code : " + "11689@AQ8AE5";group="a"; }
+else if(id == 09191014) { text001 = "Code : " + "11689@E4Q6KZ";group="a"; }
+else if(id == 09191018) { text001 = "Code : " + "11689@1QZRX8";group="a"; }
+else if(id == 09191020) { text001 = "Code : " + "11689@EJJ3Y5";group="a"; }
+else if(id == 09191027) { text001 = "Code : " + "11689@9BSSX7";group="a"; }
+else if(id == 09191030) { text001 = "Code : " + "11689@F6B5MY";group="a"; }
+else if(id == 09191040) { text001 = "Code : " + "11689@9YYSF5";group="a"; }
+else if(id == 09191051) { text001 = "Code : " + "11689@49EQHK";group="a"; }
+else if(id == 09191053) { text001 = "Code : " + "11689@6ZETE6";group="a"; }
+else if(id == 09191064) { text001 = "Code : " + "11689@PDJ67C";group="a"; }
+else if(id == 09191066) { text001 = "Code : " + "11689@AC6PP2";group="a"; }
+else if(id == 09191070) { text001 = "Code : " + "11689@F1DM6D";group="a"; }
+else if(id == 09191079) { text001 = "Code : " + "11689@BBB6L7";group="a"; }
+else if(id == 09191103) { text001 = "Code : " + "11689@J5F4QQ";group="a"; }
+else if(id == 09191112) { text001 = "Code : " + "11689@3LHZ7B";group="a"; }
+else if(id == 09191120) { text001 = "Code : " + "11689@7HWK2A";group="a"; }
+else if(id == 09191122) { text001 = "Code : " + "11689@EXY78C";group="a"; }
+else if(id == 09191124) { text001 = "Code : " + "11689@6JC4KN";group="a"; }
+else if(id == 09191126) { text001 = "Code : " + "11689@D4BH7X";group="a"; }
+else if(id == 09191131) { text001 = "Code : " + "11689@6DNX7R";group="a"; }
+else if(id == 09191133) { text001 = "Code : " + "11689@FH7E4A";group="a"; }
+else if(id == 09191152) { text001 = "Code : " + "11689@9SHX4A";group="b"; }
+else if(id == 09191154) { text001 = "Code : " + "11689@J1MKE9";group="b"; }
+else if(id == 09191155) { text001 = "Code : " + "11689@8MAX6J";group="b"; }
+else if(id == 09191158) { text001 = "Code : " + "11689@5SM4XS";group="b"; }
+else if(id == 09191160) { text001 = "Code : " + "11689@98ZLBD";group="b"; }
+else if(id == 09191162) { text001 = "Code : " + "11689@TJH6R9";group="b"; }
+else if(id == 09191168) { text001 = "Code : " + "11689@XFY97F";group="b"; }
+else if(id == 09191171) { text001 = "Code : " + "11689@PW65FS";group="b"; }
+else if(id == 09191182) { text001 = "Code : " + "11689@A1SG9B";group="b"; }
+else if(id == 09191185) { text001 = "Code : " + "11689@1NEC6W";group="b"; }
+else if(id == 09191189) { text001 = "Code : " + "11689@E84EGJ";group="b"; }
+else if(id == 09191192) { text001 = "Code : " + "11689@7PZ6XM";group="b"; }
+else if(id == 09191194) { text001 = "Code : " + "11689@2DLD1Y";group="b"; }
+else if(id == 09191198) { text001 = "Code : " + "11689@YAK72W";group="b"; }
+else if(id == 09201002) { text001 = "Code : " + "11689@5Z1BFE";group="b"; }
+else if(id == 09201010) { text001 = "Code : " + "11689@Z3S5CT";group="b"; }
+else if(id == 09201014) { text001 = "Code : " + "11689@79EGJM";group="b"; }
+else if(id == 09201015) { text001 = "Code : " + "11689@DW4R1D";group="b"; }
+else if(id == 09201018) { text001 = "Code : " + "11689@YR2HB5";group="b"; }
+else if(id == 09201020) { text001 = "Code : " + "11689@NEQ64R";group="b"; }
+else if(id == 09201023) { text001 = "Code : " + "11689@B8KDE1";group="b"; }
+else if(id == 09201032) { text001 = "Code : " + "11689@3NNF4A";group="b"; }
+else if(id == 09201035) { text001 = "Code : " + "11689@E1SNE2";group="b"; }
+else if(id == 09201041) { text001 = "Code : " + "11689@KKM8G5";group="b"; }
+else if(id == 09201047) { text001 = "Code : " + "11689@9MYZY3";group="b"; }
+else if(id == 09201050) { text001 = "Code : " + "11689@GX5GL4";group="b"; }
+else if(id == 09201051) { text001 = "Code : " + "11689@K3QBB2";group="b"; }
+else if(id == 09201053) { text001 = "Code : " + "11689@G9J5HD";group="b"; }
+else if(id == 09201057) { text001 = "Code : " + "11689@ZC2ES6";group="b"; }
+else if(id == 09201061) { text001 = "Code : " + "11689@SGN2Z3";group="b"; }
+else if(id == 09201072) { text001 = "Code : " + "11689@1Y6CNL";group="c"; }
+else if(id == 09201079) { text001 = "Code : " + "11689@G7LKL7";group="c"; }
+else if(id == 09201086) { text001 = "Code : " + "11689@4PPBP6";group="c"; }
+else if(id == 09201088) { text001 = "Code : " + "11689@3TLPC1";group="c"; }
+else if(id == 09201092) { text001 = "Code : " + "11689@7DS5QE";group="c"; }
+else if(id == 09201093) { text001 = "Code : " + "11689@MS6NL3";group="c"; }
+else if(id == 09201104) { text001 = "Code : " + "11689@YRL5H7";group="c"; }
+else if(id == 09201113) { text001 = "Code : " + "11689@ZQH4N2";group="c"; }
+else if(id == 09201114) { text001 = "Code : " + "11689@CW87MT";group="c"; }
+else if(id == 09201116) { text001 = "Code : " + "11689@8J4PPE";group="c"; }
+else if(id == 09201120) { text001 = "Code : " + "11689@F26NYJ";group="c"; }
+else if(id == 09141173) { text001 = "Code : " + "11689@B4NPW4";group="c"; }
+else if(id == 09151001) { text001 = "Code : " + "11689@8ZN8XJ";group="c"; }
+else if(id == 09165025) { text001 = "Code : " + "11689@Q95FLY";group="c"; }
+else if(id == 09165036) { text001 = "Code : " + "11689@2A7KBC";group="c"; }
+else if(id == 09171078) { text001 = "Code : " + "11689@BXY1W3";group="c"; }
+else if(id == 09171088) { text001 = "Code : " + "11689@P5M7CF";group="c"; }
+else if(id == 09171113) { text001 = "Code : " + "11689@SY1JY8";group="c"; }
+else if(id == 09171509) { text001 = "Code : " + "11689@GB9T3Z";group="c"; }
+else if(id == 09175013) { text001 = "Code : " + "11689@TRY24T";group="c"; }
+else if(id == 09175034) { text001 = "Code : " + "11689@HHC86E";group="c"; }
+else if(id == 09175044) { text001 = "Code : " + "11689@2FQQ9Z";group="c"; }
+else if(id == 09181018) { text001 = "Code : " + "11689@K9GF7W";group="c"; }
+else if(id == 09181021) { text001 = "Code : " + "11689@M5QA2N";group="c"; }
+else if(id == 09181028) { text001 = "Code : " + "11689@AZE96F";group="c"; }
+else if(id == 09181054) { text001 = "Code : " + "11689@M2JB3B";group="c"; }
+else if(id == 09181071) { text001 = "Code : " + "11689@NJCF99";group="c"; }
+else if(id == 09181507) { text001 = "Code : " + "11689@M3KF7C";group="c"; }
+else if(id == 09191034) { text001 = "Code : " + "11689@B8M3HF";group="c"; }
+else if(id == 09191049) { text001 = "Code : " + "11689@TGEJ98";group="c"; }
+else if(id == 09191062) { text001 = "Code : " + "11689@18MFDJ";group="d"; }
+else if(id == 09191068) { text001 = "Code : " + "11689@LGC42X";group="d"; }
+else if(id == 09191075) { text001 = "Code : " + "11689@9H2PQM";group="d"; }
+else if(id == 09191085) { text001 = "Code : " + "11689@1WF5QM";group="d"; }
+else if(id == 09191086) { text001 = "Code : " + "11689@9SQJ5D";group="d"; }
+else if(id == 09191105) { text001 = "Code : " + "11689@M1MD1F";group="d"; }
+else if(id == 09191108) { text001 = "Code : " + "11689@R22JDJ";group="d"; }
+else if(id == 09191116) { text001 = "Code : " + "11689@C6R1JN";group="d"; }
+else if(id == 09191125) { text001 = "Code : " + "11689@WFXM51";group="d"; }
+else if(id == 09191128) { text001 = "Code : " + "11689@C1FP2B";group="d"; }
+else if(id == 09191150) { text001 = "Code : " + "11689@QJ8YG1";group="d"; }
+else if(id == 09191164) { text001 = "Code : " + "11689@2CM7QZ";group="d"; }
+else if(id == 09191166) { text001 = "Code : " + "11689@62JCXP";group="d"; }
+else if(id == 09191172) { text001 = "Code : " + "11689@YQ2YZ4";group="d"; }
+else if(id == 09191196) { text001 = "Code : " + "11689@9MCAD2";group="d"; }
+else if(id == 09201008) { text001 = "Code : " + "11689@8Q6CXF";group="d"; }
+else if(id == 09201031) { text001 = "Code : " + "11689@3C1EQP";group="d"; }
+else if(id == 09201059) { text001 = "Code : " + "11689@Y2EZB8";group="d"; }
+else if(id == 09201064) { text001 = "Code : " + "11689@K3WBA9";group="d"; }
+else if(id == 09201069) { text001 = "Code : " + "11689@C88WMZ";group="d"; }
+else if(id == 09201070) { text001 = "Code : " + "11689@NE3BH3";group="d"; }
+else if(id == 09201083) { text001 = "Code : " + "11689@4RBZY9";group="d"; }
+else if(id == 09201084) { text001 = "Code : " + "11689@RWC6H2";group="d"; }
+else if(id == 09201095) { text001 = "Code : " + "11689@N99AJA";group="d"; }
+else if(id == 09201098) { text001 = "Code : " + "11689@4Y4KBG";group="d"; }
+else if(id == 09201105) { text001 = "Code : " + "11689@BJY9T5";group="d"; }
+else if(id == 09201115) { text001 = "Code : " + "11689@7NZN3J";group="d"; }
+else if(id == 09201117) { text001 = "Code : " + "11689@EF19XC";group="d"; }
+else if(id == 09201502) { text001 = "Code : " + "11689@CMRA31";group="d"; }
+else if(id == 09191177) { text001 = "Code : " + "11689@GY4KE6";group="d"; }
+else if(id == 09191189) { text001 = "Code : " + "11689@KWL75G";group="d"; }
+else if(id == 09191057) { text001 = "Code : " + "11689@H9H6GD";group="d"; }
+
+else if(id == 1111) { text001 = "Code : " + "11689@XNC3Z2";group="a"; }
+else if(id == 2222) { text001 = "Code : " + "11689@MM7E1B";group="b"; }
+else if(id == 3333) { text001 = "Code : " + "11689@S58NGW";group="c"; }
+else if(id == 4444) { text001 = "Code : " + "11689@Z5HWK8";group="d"; }
+        else text001 = "رقم القيد غير صحيح !" ;
+
+if(text001 == "رقم القيد غير صحيح !")
+{document.getElementById("open").style.display = "none";
+document.getElementById("check").style.display = "block";}
+else
+{document.getElementById("open").style.display = "block";
+document.getElementById("check").style.display = "none";}
+
         document.getElementById("message001").innerHTML = text001;
         
         
     }
     
+    function openInNewTab() {
+
+var Url;
+        if(group == "a")
+        Url="https://3bkri.com/start.asp?ex=11689-9";
+else
+        if(group == "b")
+        Url="https://3bkri.com/start.asp?ex=11689-10";
+else
+        if(group == "c")
+        Url="https://3bkri.com/start.asp?ex=11689-11";
+else
+        if(group == "d")
+        Url="https://3bkri.com/start.asp?ex=11689-12";
+        
+        location.href = Url;
+        
+}
 
     </script>
 
